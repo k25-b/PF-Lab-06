@@ -1,7 +1,7 @@
 #include<stdio.h>
 int code_correct = 0, passcode = 2468;
 int main() {
-    while (code_correct == 0) {
+    do {
         printf("Enter the passcode: ");
         scanf("%d", &passcode);
         if (passcode == 2468) {
@@ -11,5 +11,5 @@ int main() {
         else {
             printf("You have entered the wrong password!\n");
         }
-    }
+    } while (passcode != 2468);
 }
