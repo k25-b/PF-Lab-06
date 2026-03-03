@@ -10,11 +10,10 @@ int main() {
             printf("Enter again: ");
             scanf("%d", &data_usage);
         }
-        else if (total_data < 0) {
+        else if (total_data == 0) {
             printf("Data plan exceeded!\n");
             data_usage = 0;
-            printf("Enter data in your plan: \n");
-            scanf("%d", &data_usage);
+
         }
         total_data = total_data - data_usage;
         printf("Data left: %d \n", total_data);
